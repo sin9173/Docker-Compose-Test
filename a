@@ -1,0 +1,6 @@
+#도커 컴포즈 실행 (-d옵션 줄경우 백그라운드에서 실행)
+docker-compose up 이미지가 없을때 이미지를 빌드하고 컨테이너를 시작
+docker-compose up --build 이미지가 있든 없든 빌드하고 컨테이너를 시작
+
+#도커 컴포즈 중단
+docker-compose down

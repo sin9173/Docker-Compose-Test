@@ -1,0 +1,15 @@
+#Docker Compose의 버전
+version: "3"
+
+#이곳에 실행하려는 컨테이너들
+services:
+  #컨테이너의 이름
+  redis-server:
+    #컨테이너에서 사용하는 이미지
+    image: "redis"
+  node-app:
+    #Dockerfile의 빌드경로
+    build: .
+    #포트매핑
+    ports:
+      - "5000:8080"
